@@ -1,13 +1,14 @@
-Welcome to Lumache's documentation!
+Welcome to repr-control's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**repr-control** is a toolbox to solve nonlinear stochastic control via representation learning. 
+User can simply input the **dynamics, rewards, initial distributions** (See :ref:`run_samples` for sample code) of the nonlinear control problem
+and get the optimal controller parametrized by a neural network.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+The optimal controller is trained via Spectral Dynamics Embedding Control (SDEC) algorithm based on representation learning and reinforcement learning.
+For those interested in the details of SDEC algorithm, please check our `papers <https://arxiv.org/abs/2304.03907>`_.
+
+Check out the :doc:`installation` instructions, and the :doc:`usage` section for further information.
 
 .. note::
 
@@ -18,5 +19,6 @@ Contents
 
 .. toctree::
 
+   installation
    usage
    api
